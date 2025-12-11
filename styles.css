@@ -223,7 +223,6 @@ p {
 
 .logo {
   height: 70px;
-  filter: drop-shadow(0 0 10px rgba(0, 194, 255, 0.3));
   transition: transform var(--transition-normal);
 }
 
@@ -565,8 +564,7 @@ p {
 
 .btn-hero:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 30px rgba(0, 194, 255, 0.5);
-  animation: pulseGlow 1.5s ease-in-out infinite;
+  box-shadow: 0 0 40px rgba(0, 194, 255, 0.6);
 }
 
 @keyframes pulseGlow {
@@ -612,7 +610,7 @@ p {
 
 .areas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-lg);
   margin-top: var(--spacing-lg);
 }
@@ -708,10 +706,10 @@ p {
   height: 600px;
   background: radial-gradient(circle, rgba(0, 194, 255, 0.1), transparent);
   filter: blur(80px);
-  animation: pulseGlow 8s ease-in-out infinite;
+  animation: bannerPulse 8s ease-in-out infinite;
 }
 
-@keyframes pulseGlow {
+@keyframes bannerPulse {
 
   0%,
   100% {
